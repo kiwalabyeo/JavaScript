@@ -28,3 +28,12 @@ var firstChar = str[0]; // 'J'
 var lastChar = str[str.length - 1]; // 't'
 console.log("First character: " + firstChar);
 console.log("Last character: " + lastChar);
+
+// Most languages have a zero based index system where the first character is at index 0, the second at index 1 and so on.
+// String Immutability
+var immutableStr = "Hello";
+immutableStr[0] = "h"; // This won't change the string
+console.log(immutableStr); // Still "Hello" and you have to retype the whole string to change it
+
+// Bracket notation to find nth to last character
+var secondToLastChar = str[str.length - 2]; // 'p'  
