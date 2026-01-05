@@ -10,11 +10,11 @@ console.log('the length of the array is: ' + selectedColors.length);
 
 // Arrays allow us to store multiple values in a single variable instead of declaring separate variables for each value.
 // We can store values of different data types in an array including numbers, strings, booleans, objects and even other arrays.
-let myArray = ["Oscar", 21, "Kampala", True];
+let myArray = ["Oscar", 21, "Kampala", true];
 console.log(myArray);
 
 //Nested Arrays
-let nestedArray = [["Ford", "Mustang", 1969], "Oscar", 21, True];
+let nestedArray = [["Ford", "Mustang", 1969], "Oscar", 21, true];
 console.log(nestedArray);
 console.log(nestedArray[0]);
 console.log(nestedArray[0][1]);
@@ -49,3 +49,9 @@ vegetables.unshift('Spinach');
 console.log(vegetables); // Output: ['Spinach', 'Carrot', 'Broccoli']
 let removedVegetable = vegetables.shift();
 console.log(vegetables);
+
+// Push and unhshift add elements to an array to the end and beginning respectively while pop and shift remove elements from the end and beginning respectively.
+
+let myList = [['Chocolate Bar', 15], ['Milk', 10], ['Bread', 5], ['Eggs', 12], ['Butter', 8]];
+//to create a shopping list with 5 items and their prices.
+console.log(myList);
