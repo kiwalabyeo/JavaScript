@@ -108,3 +108,33 @@ let testArray = [1, 2, 3, 4, 5];
 console.log("Before: " + JSON.stringify(testArray))
 console.log(nextInLine(testArray, 6));
 console.log("After: " + JSON.stringify(testArray))
+
+// Functions with boleans
+function ourTrueOrFalse(isItTrue) {
+    if (isItTrue) {
+        return "Yes It is true";
+    }
+    return "No it is not True";
+}
+
+console.log(ourTrueOrFalse(true));
+
+// Testing if a value is equal to, greator than or less than using if statements
+
+function equalTo(val) {
+    if (val == 12) {
+        return "Yes it is equal to 12";
+    }
+    return "No it isn't equal to 12";
+}
+
+console.log(equalTo(14));
+
+function greatorThanTen(num) {
+    if (num > 10) {
+        return "Yes it is greator than 10";
+    }
+    return "Nope, It is not greator than 10";
+}
+
+console.log(greatorThanTen(9));
