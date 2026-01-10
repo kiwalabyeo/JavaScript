@@ -138,3 +138,137 @@ function greatorThanTen(num) {
 }
 
 console.log(greatorThanTen(9));
+
+/* Strict equality operator "==="
+ It is used to differentiate between strings and integers
+ Forexample 54 === 54 would be true 
+ but 54 === '54' won't because one is a string and the other is an integer
+ but this would be true either way if we were using ==
+ */
+
+function strictEquality(numero) {
+    if (numero === 3) {
+        return "yes it is equal";
+    }
+    return "No they are not the same";
+}
+ 
+let testOne = 3;
+let testTwo = "3";
+var testThree = 54;
+
+
+console.log(strictEquality(testOne));
+console.log(strictEquality(testTwo));
+console.log(strictEquality(testThree));
+
+// The inequality operator is != and the strict inequality is !==
+// Greator than or equal to is >= and the inverse is <=
+
+// Using the 'and' operator if testing for more than one (&&)
+
+function numBtnTwentyAndTen(num1) {
+    if (num1 > 10 && num1 < 20) {;
+        return "The value is between 10 and 20";
+    }
+    return "The value is not between 10 and 20";
+}
+
+console.log(numBtnTwentyAndTen(13));
+console.log(numBtnTwentyAndTen(9));
+
+// Logical operations using or
+
+function usingOr(chr) {
+    if (chr < 10 || chr > 20) {
+        return "It is out of range";
+    }
+    return "It is in range";
+}
+
+console.log(usingOr(15));
+console.log(usingOr(9));
+
+// ELse statements
+function usingElseStatements(int) {
+    if (int === 5) {
+        result = "Yes, the number is five!";
+    }
+    else {
+        result = "The number is either not equal to five or it is a string!";
+    }
+}
+
+usingElseStatements(9);
+console.log(result);
+usingElseStatements(5);
+console.log(result);
+
+// Using elseIf statements
+
+function usingElseIf(float) {
+    if (float < 100) {
+        return "Capital is too low";
+    }
+    else if (float > 200) {
+        return "Capital is more than enough!";
+    }
+    return "Capital is in usable range";
+}
+
+console.log(usingElseIf(150));
+console.log(usingElseIf(400));
+console.log(usingElseIf(50));
+
+// Once the first condition is met in an if statement, it doesn't check the rest so it is important to organise the code logically
+
+// Using Switch statements
+
+function usingSwitch(valv) {
+    var answer = "";
+    switch (valv) {
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+            break;
+        default:
+            answer="Not a radiation"
+    }
+    return answer;
+}
+console.log(usingSwitch(1));
+console.log(usingSwitch(2));
+console.log(usingSwitch(3));
+console.log(usingSwitch(11));
+// NOTE: the switch statement uses the strict equality.
+
+// Multiple cases returning the same output using switch
+
+function sequentialOut(nin) {
+    ans = "";
+    switch (nin) {
+        case 1:
+        case 2:
+        case 3:
+            ans = "Very low";
+            break;
+        case 4:
+        case 5:
+            ans = "Average";
+            break;
+        case 6:
+            ans = "Good";
+            break;
+    }
+    return ans;
+}
+
+console.log(sequentialOut(4));
