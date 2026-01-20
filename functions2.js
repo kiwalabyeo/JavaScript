@@ -147,3 +147,57 @@ console.log(myMusic);
 var firstAlbum = myMusic[0].artist;
 var secondFormat = myMusic[1].formats[1];
 console.log(`The first album is by ${firstAlbum} and the second format of the second album is ${secondFormat}`);
+
+//parseInt function
+function convertToInt(strin) {
+    return parseInt(strin);
+}
+console.log(convertToInt("238"));
+
+// Using parseInt to convert binary to integer
+function binaryToBaseTen(str) {
+    return parseInt(str, 2);
+}
+console.log(`The binary 10011 is ${binaryToBaseTen("10011")} in base 10.`);
+
+//Ternary(Conditional) Operator
+//condition ? statement_if_true : statement_if_false
+var odd = [];
+var even = [];
+function evenAndOdd(a) {
+    (a % 2) == 0 ? even.push(a) : odd.push(a);
+}
+
+evenAndOdd(1);
+evenAndOdd(2);
+evenAndOdd(3);
+evenAndOdd(4);
+evenAndOdd(5);
+console.log(`The odd numbers are ${odd} and the even numbers are ${even}`);
+
+// Nested ternary operators
+function checkingPostivity(num) {
+    return num > 0 ?  "Postive" : num < 0 ? "Negative" : "Zero";
+}
+console.log(`The number 10 is ${checkingPostivity(10)}`);
+console.log(`The number -1 is ${checkingPostivity(-1)}`);
+console.log(`The number 0 is ${checkingPostivity(0)}`);
+
+// Arrow function
+/* instead of writing this
+var magic = function(){
+    return new Date();
+};
+We can use arrows for that anonymous function
+*/
+
+var magic = () => {
+    return new Date();
+};
+
+// Or
+var magic1 = () => new Date();
+// More Arrow functions without parameters
+const nayab = (arr1, arr2) => arr1.concat(arr2);
+console.log(nayab([1, 3], [4, 5, 6]));
+console.log(magic1());
